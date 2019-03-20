@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <div class="inner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3">
+                            <div class="news">
+                                <img src="images/default.png">
+                                <span>您好!</span>
+                                <span>
+                                    <董事长>
+                                </span>
+                                <span class="dropdown">张三
+                                    <span class="caret" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                        <li>
+                                            <a href="#" class="rever_password">
+                                                <span class="glyphicon glyphicon-cog draw"></span>修改密码</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                <span class="glyphicon glyphicon-log-out draw"></span>注销</a>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default content_panel">
+            <a href="index.html" class="btn btn-info back">返回</a>
+            <div class="panel-body header_title">
+               出库申请单
+            </div>
+            <div class="panel-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <div class="status_first">
+                                <p class="status" >状态</p>
+                                <ul class="status_down" data-flag="true">
+                                  <li><i class="glyphicon glyphicon-remove text-danger"></i>未收货(11)</li>
+                                  <li><i class="glyphicon glyphicon-ok text-success"></i>已到货(0)</li>
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-10">
+                            <table class="table table-bordered">
+                                 <tr class="active tr_header">
+                                     <td>出库申请单编号</td>
+                                     <td>出库方式</td>
+                                     <td>预约出库时间</td>
+                                     <td>是否出货</td>
+                                     <td>实际出货时间</td>
+                                     <td>出库照片</td>
+                                     <td>项目名称</td>
+                                     <td>客户</td>
+                                     <td>仓库</td>
+                                     <td>操作</td>
+                                 </tr>
+                                 <tr class="active tr_header">
+                                        <td>109239578547</td>
+                                        <td>正常出库</td>
+                                        <td>2018-12-26 11:00</td>
+                                        <td><i class="glyphicon glyphicon-remove text-danger"></i></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>虞城县群友</td>
+                                        <td>虞城群友</td>
+                                        <td>虞城群友</td>
+                                        <td><a href="#" class="cancel">出货通知</a></td>
+                                    </tr>
+                            </table>
+                            <ul class="pagination pagination-sm pull-right">
+                                <li><a href="#">上一页</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">下一页</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mengban_over"></div>
+        <div class="form_show outline_show" style="display:none">
+            <form>
+                <p class="bianji">通知时间</p>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">请选择预计何时出货</label>
+                   <select class="form-control">
+                       <option value="">现在</option>
+                       <option value="">半个小时后</option>
+                       <option value="">一个小时后</option>
+                       <option value="">三个小时后</option>
+                       <option value="">五个小时后</option>
+                   </select>
+                </div>
+                <div class="right_button pull-right">
+                    <button type="submit" class="btn btn-default open_down">关闭<i class="glyphicon glyphicon-remove draw_show"></i></button>
+                    <button type="submit" class="btn btn-default preserve">通知<i class="glyphicon glyphicon-send draw_show"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+</html>

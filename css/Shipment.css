@@ -1,0 +1,24 @@
+.finish,
+.go{
+    display: inline-block;
+    width: 54px;
+    height: 25px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+.finish{
+    background-color: #FF6C60;
+}
+.go{
+    background-color: #ebc142;
+}
+.finish_td,
+.go_td{
+    text-align: center;
+}
+a:hover,
+a:focus{
+    color:#fff;
+}

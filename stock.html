@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/stock.css">
+</head>
+<body>
+    <div class="inner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <div class="col-md-9"></div>
+                        <div class="col-md-3">
+                            <div class="news">
+                                <img src="images/default.png">
+                                <span>您好!</span>
+                                <span>
+                                    <董事长>
+                                </span>
+                                <span class="dropdown">张三
+                                    <span class="caret" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></span>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                        <li>
+                                            <a href="#" class="rever_password">
+                                                <span class="glyphicon glyphicon-cog draw"></span>修改密码</a>
+                                        </li>
+                                        <li>
+                                                <a href="#">
+                                                <span class="glyphicon glyphicon-log-out draw"></span>注销</a>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default content_panel">
+            <a href="index.html" class="btn btn-info back">返回</a>
+            <div class="panel-body header_title">
+                到货通知单
+            </div>
+            <div class="panel-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                    <div class="col-md-2">
+                       <div class="status_first">
+                            <p class="status" >调度状态</p>
+                            <ul class="status_down" data-flag="true">
+                            <li><i class="cicle cicle1"></i> 待指派(0)</li>
+                            <li><i class="cicle cicle2"></i>待确定(0)</li>
+                            <li><i class="cicle cicle3"></i>已接受(0)</li>
+                            </ul>
+                       </div>
+                       <div class="status_second">
+                            <p class="status" >任务状态</p>
+                            <ul class="status_down1" data-status="true">
+                            <li><i class="cicle cicle4"></i> 未完成(0)</li>
+                            <li><i class="cicle cicle5"></i>已完成(0)</li>
+                            <li><i class="cicle cicle6"></i>已作废(0)</li>
+                            </ul>
+                       </div>
+                    </div>
+                    <div class="col-md-10">
+                        <table class="table table-bordered">
+                                <tr class="active tr_header">
+                                    <td>预定时间</td>
+                                    <td>项目名称</td>
+                                    <td>客户方</td>
+                                    <td>仓库方</td>
+                                    <td>预计入库时间</td>
+                                    <td>指派人员</td>
+                                    <td>指派状态</td>
+                                    <td>完成时间</td>
+                                    <td>状态</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr class="active tr_header">
+                                    <td>122343</td>
+                                    <td>aaaaaa</td>
+                                    <td>bbbbbb</td>
+                                    <td>ccccc</td>
+                                    <td>2018-4-3</td>
+                                    <td>小王</td>
+                                    <td><button type="button" class="btn btn-warning">待指派</button></td>
+                                    <td>完成时间</td>
+                                    <td><button type="button" class="btn btn-danger">未完成</button></td>
+                                    <td>
+                                        <a href="#" class="rever_password">修改</a>
+                                        <a href="#" class="cancel">作废</a>
+                                        <a href="#" class="assign">指派</a>
+                                        <a href="#">查看</a>
+                                    </td>
+                                </tr>
+                        </table>
+                        <ul class="pagination pagination-sm pull-right">
+                            <li><a href="#">上一页</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">下一页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mengban_over"></div>
+        <div class="form_show outline_time" style="display:none">
+            <form>
+                <p class="bianji">通知时间</p>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">请选择预计何时到货</label>
+                    <select class="form-control">
+                        <option value="">现在</option>
+                        <option value="">半个小时后</option>
+                        <option value="">一个小时后</option>
+                        <option value="">三个小时后</option>
+                        <option value="">五个小时后</option>
+                    </select>
+                </div>
+                <div class="right_button pull-right">
+                    <button type="submit" class="btn btn-default open_down">关闭<i class="glyphicon glyphicon-remove draw_show"></i></button>
+                    <button type="submit" class="btn btn-default preserve">通知<i class="glyphicon glyphicon-send draw_show"></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- 作废 -->
+        <div class="form_show outline_show" style="display:none">
+            <form>
+                <p class="bianji">到货通知作废</p>
+                <p class="cancel">确定要作废当前到货通知?</p>
+                <div class="right_button pull-right">
+                    <button type="submit" class="btn btn-default open_down">否<i class="glyphicon glyphicon-remove draw_show"></i></button>
+                    <button type="submit" class="btn btn-default preserve">是<i class="glyphicon glyphicon-ok draw_show"></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- 指派 -->
+        <div class="form_show outline_go" style="display:none">
+            <form>
+                <p class="bianji">到货通知指派</p>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">指派给那一位验收员(原指派人员:)</label>
+                    <select class="form-control">
+                        <option value="">李建民</option>
+                        <option value="">李三</option>
+                        <option value="">王五</option>
+                        <option value="">李四</option>
+                    </select>
+                </div>
+                <div class="right_button pull-right">
+                    <button type="submit" class="btn btn-default open_down">关闭<i class="glyphicon glyphicon-remove draw_show"></i></button>
+                    <button type="submit" class="btn btn-default preserve">通知<i class="glyphicon glyphicon-send draw_show"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+</html>

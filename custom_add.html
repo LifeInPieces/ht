@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DarF2LCCGzn6T16zgy8ZPkvYYE5CT6fu"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css"> 
+    <link rel="stylesheet" href="css/custom_add.css">
+</head>
+<body>
+    <div class="inner">
+         <div class="panel panel-default content_panel">
+             <a href="custom.html" class="btn btn-info back">返回</a>
+            <div class="panel-body header_title">
+                企业客户
+            </div>
+            <div class="panel-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <form class="orgin">
+                                <div class="form-group">
+                                    <label for="custom_title">机构全称<i class="glyphicon glyphicon-asterisk text-danger"></i></label>
+                                    <input type="email" class="form-control" id="custom_title">
+                                </div>
+                                    <div class="form-group col-md-6 custom_left">
+                                        <label for="custom_jiancehng">机构简称<i class="glyphicon glyphicon-asterisk text-danger"></i></label>
+                                        <input type="email" class="form-control" id="custom_jiancehng">
+                                    </div>
+                                    <div class="form-group col-md-6 custom_left">
+                                        <label for="">行业类别</label>
+                                        <select class="form-control">
+                                            <option value="">家电</option>
+                                            <option value="">食品</option>
+                                            <option value="">畜牧业</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="custom_daima">机构代码</label>
+                                        <input type="email" class="form-control" id="custom_daima" placeholder="机构代码">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="custom_city">详细地址</label>
+                                        <input type="email" class="form-control" id="custom_city" placeholder="详细地址">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">经纬度<i class="glyphicon glyphicon-asterisk text-danger"></i></label>
+                                        <div class="row">
+                                            <input type="email" class="form-control lat">
+                                            <input type="email" class="form-control lat">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6 custom_left">
+                                        <label for="custom_main">企业主机</label>
+                                        <input type="email" class="form-control" id="custom_main" placeholder="企业主机">
+                                    </div>
+                                    <div class="form-group col-md-6 custom_left">
+                                        <label for="custom_chuanzhen">传真</label>
+                                        <input type="email" class="form-control" id="custom_chuanzhen" placeholder="传真">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="custom_title">企业邮箱</label>
+                                        <input type="email" class="form-control" id="custom_title" placeholder="企业邮箱">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="custom_title">邮编</label>
+                                        <input type="email" class="form-control" id="custom_title" placeholder="邮编">
+                                    </div>
+                                    <div class="pull-right">
+                                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-arrow-left"></i>返回</button>
+                                        <a href="custom.html" class="btn btn-info">保存<i class="glyphicon glyphicon-file"></i></a>
+                                    </div>
+                            </form>
+                        </div>
+                        <div class="col-md-7">
+                             <!--百度地图容器-->
+                            <div id="map"></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/map.js"></script>
+</html>
